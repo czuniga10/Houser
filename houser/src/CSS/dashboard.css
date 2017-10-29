@@ -1,0 +1,10 @@
+.dash {
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
