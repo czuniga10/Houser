@@ -1,0 +1,10 @@
+.step-four {
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    background-color: #77BFF4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
