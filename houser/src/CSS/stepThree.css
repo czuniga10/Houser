@@ -1,10 +1,108 @@
 .step-three {
     position: relative;
-    width: 50vw;
+    width: 850px;
     height: 100vh;
     background-color: #77BFF4;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.stepthree-top {
+    width: 725px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cancel {
+    background-color: #F46564;
+    border: solid 1px gray;
+    width: 50px;
+    height: 20px;
+}
+
+.cancel-link {
+    text-decoration: none;
+    color: white;
+}
+
+.step-dots {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.step-three-inputs {
+    width: 460px;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.step-three-inputs h4 {
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+
+.step-three-inputs input {
+    width: 150px;
+}
+
+.address {
+    width: 431px;
+    height: 80px;
+}
+
+.address input {
+    width: 425px;
+}
+
+.city-zip {
+    width: 155px;
+    margin-right: 115px;
+}
+
+.state-year {
+    width: 155px;
+}
+
+.next-step {
+    background-color: #0087FD;
+    border: none;
+    width: 80px;
+    height: 25px;
+}
+
+.next-step-link {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.previous-next-buttons {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous-step {
+    background-color: #0087FD;
+    border: none;
+    width: 90px;
+    height: 25px;
+}
+
+.previous-step-link {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

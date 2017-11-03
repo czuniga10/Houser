@@ -4,7 +4,6 @@ import { Route } from 'react-router-dom';
 import './App.css';
 
 import Login from './components/Login';
-import Regi from './components/Register';
 import Dash from './components/Dashboard';
 import StepOne from './components/StepOne';
 import StepTwo from './components/StepTwo';
@@ -16,7 +15,6 @@ export default class App extends Component {
     return (
       <div className="App">
         <Route exact path="/" component={Login}/>
-        <Route path='/register' component={Regi}/>
         <Route path='/dashboard' component={Dash}/>
         <Route path='/stepone' component={StepOne}/>
         <Route path='/steptwo' component={StepTwo}/>

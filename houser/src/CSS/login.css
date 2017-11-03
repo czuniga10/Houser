@@ -1,6 +1,6 @@
 .login {
     position: relative;
-    width: 50vw;
+    width: 850px;
     height: 100vh;
     background-color: white;
     display: flex;
@@ -65,12 +65,17 @@
     height: 30px;
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
 
 .login-register button {
     width: 100px;
     height: 30px;
     border: none;
+    color: white;
+    font-size: 10pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
 }
 
 .login-register button:focus {
@@ -81,12 +86,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10pt;
     width: 90px;
     height: 20px;
-    color: white;
-    cursor: pointer;
     text-decoration: none;
 }
 
@@ -94,13 +95,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10pt;
-    width: 90px;
-    height: 20px;
-    color: white;
-    cursor: pointer;
     text-decoration: none;
+    width: 100px;
+    height: 30px;
+    border: none;
 }
 
 .login-button {

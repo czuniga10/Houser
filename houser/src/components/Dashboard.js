@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 import '../CSS/dashboard.css';
 
@@ -11,6 +12,30 @@ import StepOne from './StepOne';
 
 
 export default class Dashboard extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            properties: []
+        }
+    }
+
+    getAllProperties = () => {
+        axios   
+            .get('')
+            .then((response) => {
+                this.setState({properties: response.data});
+                console.log("Hello! I am a response: ", response)
+            })
+    }
+
+    componentWillMount() {
+        this.getAllProperties();
+    }
+
+
+
+
   render() {
     return (
       <div className="dash">
@@ -57,9 +82,16 @@ export default class Dashboard extends Component {
                     <h5>Zip:</h5>
                     <h5>Year Built:</h5>
                 </div>
-            <img src={deleteX} alt="x in top right corner" className="delete-x"/>
+                
+                <img src={deleteX} alt="x in top right corner" className="delete-x"/>
 
             </div>
+
+            {/* <div>
+                {this.state.properties.map(property => {
+                    return <div>{property.city}</div>
+                })}
+            </div> */}
 
         </div>
 
