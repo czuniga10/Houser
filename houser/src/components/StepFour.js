@@ -5,11 +5,12 @@ import '../CSS/stepFour.css';
 
 import Header from './Header';
 import active from '../images/step_active_blue.png';
-import inactive from '../images/step_inactive_blue.png';
 import complete from '../images/step_completed_blue.png';
 
 
 export default class StepFour extends Component {
+  
+
     render() {
       return (
         <div className="step-four">
@@ -32,7 +33,10 @@ export default class StepFour extends Component {
             <div className="img-preview-input">
                 <div className="preview"><h5>Preview</h5></div>
                 <h4>Image URL</h4>
-                <input></input>
+                <input
+                type="text"
+                    >
+                </input>
             </div>
 
             <div className="previous-next-buttons">

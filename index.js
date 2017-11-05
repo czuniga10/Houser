@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const massive = require('massive');
 const session = require('express-session')
-require('dotenv').config()
+require('dotenv').config();
 
 const app = express();
 app.use( bodyParser.json() );
@@ -36,6 +36,7 @@ app.use( session({
 }));
 
 app.use( checkForSession );
+app.use( express.static('./houser/build') );
 
     
 
@@ -51,7 +52,7 @@ app.get( '/api/properties', houseController.getAll );
 app.get( '/api/properties/filter', houseController.filter );
 app.delete( '/api/properties/:id', houseController.delete );
 
-const port = process.env.PORT || 3008;
+const port = 3000;
 app.listen( port, () => { console.log(`================================\n Server listening on port ${port}.\n================================`); } );
 
 

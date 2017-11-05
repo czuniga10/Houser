@@ -6,10 +6,12 @@ import '../CSS/stepOne.css';
 import Header from './Header';
 import active from '../images/step_active_blue.png';
 import inactive from '../images/step_inactive_blue.png';
-import complete from '../images/step_completed_blue.png';
 
 
 export default class StepOne extends Component {
+    
+
+
     render() {
       return (
         <div className="step-one">
@@ -31,11 +33,18 @@ export default class StepOne extends Component {
 
             <div className="step-one-inputs">
                 <h4>House Name</h4>
-                <input></input>
+                <input
+                    >
+                </input>
                 <h4>House Price</h4>
-                <input></input>
+                <input
+                    >
+                </input>
                 <h4>House Description</h4>
-                <textarea className="descript"></textarea>
+                <textarea 
+                    className="descript"
+                    >
+                    </textarea>
             </div>
 
             <button className="next-step"><Link to="/steptwo" className="next-step-link">Next Step</Link></button>
