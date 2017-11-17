@@ -1,0 +1,43 @@
+.header-container {
+    width: 100vw;
+    height: 80px;
+    background-color: #003159;
+    display: flex;
+    justify-content: center;
+}
+
+.header-left {
+    width: 25vw;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-left img {
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+}
+
+.header-left p {
+    font-size: 24pt;
+    color: white;
+    margin-left: 15px;
+}
+
+.header-right {
+    width: 25vw;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logout{
+    color: white;
+    margin-right: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}

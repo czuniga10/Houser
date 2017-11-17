@@ -1,0 +1,119 @@
+.login {
+    position: relative;
+    width: 850px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login img {
+    width: 150px;
+    height: auto;
+}
+
+.username {
+    width: 26vw;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.username input{
+    width: 25.5vw;
+    height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    border: none;
+    border-bottom: solid lightgray 1px;
+}
+
+.username input:focus {
+    outline: none;
+    border-bottom: solid 1px #0087F4; 
+}
+
+.password {
+    width: 26vw;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.password input{
+    width: 25.5vw;
+    height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    border: none transparent;
+    border-bottom: solid lightgray 1px;
+}
+
+.password input:focus {
+    outline: none;
+    border-bottom: solid 1px #0087F4; 
+}
+
+.login-register {
+    width: 20vw;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.login-register button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    font-size: 10pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.login-register button:focus {
+    outline: none;
+}
+
+.login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 20px;
+    text-decoration: none;
+}
+
+.regi-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    border: none;
+}
+
+.login-button {
+    background-color: #0087FD;
+}
+
+.login-button:hover {
+    background-color: rgba(0, 135, 244, 0.9);
+}
+
+.register-button {
+    background-color: #004C8A;
+}
+
+.register-button:hover {
+    background-color: rgba(0, 76, 138, 0.9);
+}
+

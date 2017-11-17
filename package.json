@@ -2,9 +2,13 @@
   "name": "Houser",
   "version": "1.0.0",
   "description": "",
-  "main": "server/index.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "run-s run-install run-build start-server",
+    "run-install": "cd houser/ && npm i",
+    "run-build": "cd houser/ && npm run build",
+    "start-server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +27,7 @@
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
-    "massive": "^4.4.0"
+    "massive": "^4.4.0",
+    "npm-run-all": "^4.1.1"
   }
 }
