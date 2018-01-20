@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { apiHost, apiPort } from '../config/api.config';
 
 import '../CSS/login.css';
 
@@ -20,16 +21,18 @@ export default class Login extends Component {
   userRegister = () => {
     let {username, password} = this.state;
     axios
-      .post('', {
+      .post(`${apiHost}:${apiPort}/api/auth/register`, {
         username,
         password,
+      }).then(() => {
+        this.props.history.push('/dashboard')
       })
   }
 
   userLogin = () => {
     let {username, password} = this.state;
     axios 
-      .post('', {
+      .post(`${apiHost}:${apiPort}/api/auth/login`, {
         username,
         password
       }).then(() => {
@@ -66,9 +69,9 @@ export default class Login extends Component {
 
             <button onClick={this.userLogin} className="login-button">Login</button>
 
-          <Link to="/dashboard" className="regi-link">
+
             <button onClick={this.userRegister} className="register-button">Register!</button>
-          </Link>
+
 
         </div>
 

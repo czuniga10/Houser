@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { apiHost, apiPort } from '../config/api.config';
 
 import '../CSS/header.css';
 import houserWhite from '../images/houser-logo-white.png';
@@ -17,7 +18,9 @@ export default class Header extends Component {
 
   userLogout = () => {
     axios
-      .post('')
+      .get(`${apiHost}:${apiPort}/api/auth/logout`).then(() => {
+        this.props.history.push('/')
+      })
   }
 
 
@@ -31,11 +34,10 @@ export default class Header extends Component {
         </div>
 
         <div className="header-right">
-            <Link 
-              to="/" 
+            <a 
               className="logout" 
               onClick={this.userLogout}>Logout
-            </Link>
+            </a>
         </div>
 
       </div>

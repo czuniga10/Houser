@@ -10,6 +10,9 @@ import complete from '../images/step_completed_blue.png';
 
 
 export default class StepThree extends Component {
+   
+
+
     render() {
       return (
         <div className="step-three">
@@ -32,20 +35,35 @@ export default class StepThree extends Component {
             <div className="step-three-inputs">
                 <div className="address">
                     <h4>Address</h4>
-                    <input></input>
+                    <input
+                    type="text"
+                    >
+                    </input>
                 </div>
                 <div className="city-zip">
                     <h4>City</h4>
-                    <input></input>
+                    <input
+                    type="text"
+                    >
+                        </input>
                     <h4>Zip</h4>
-                    <input></input>
+                    <input
+                        type="text"
+                        >
+                    </input>
                 </div>
               
                 <div className="state-year">
                     <h4>State</h4>
-                    <input></input>
+                    <input
+                    type="text"
+                    >
+                    </input>
                     <h4>Year Built</h4>
-                    <input></input>
+                    <input
+                    type="text"
+                    >
+                    </input>
                 </div>
                
             </div>

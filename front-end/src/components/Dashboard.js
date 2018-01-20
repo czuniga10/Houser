@@ -4,11 +4,9 @@ import axios from 'axios';
 
 import '../CSS/dashboard.css';
 
-import houser from '../images/houser-logo-blue.png';
 import house from '../images/house.png';
 import deleteX from '../images/delete_icon.png';
 import Header from './Header';
-import StepOne from './StepOne';
 
 
 export default class Dashboard extends Component {
@@ -40,7 +38,7 @@ export default class Dashboard extends Component {
     return (
       <div className="dash">
 
-        <Header />
+        <Header history={this.props.history}/>
 
         <button className="new-house"><Link to='/stepone' className="new-house-link">Add New House</Link></button>
 

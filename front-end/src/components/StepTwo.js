@@ -10,6 +10,8 @@ import complete from '../images/step_completed_blue.png';
 
 
 export default class StepTwo extends Component {
+   
+
     render() {
       return (
         <div className="step-two">
@@ -36,19 +38,30 @@ export default class StepTwo extends Component {
                 </div>
                 <div>
                     <h4>House Sq. Ft.</h4>
-                    <input></input>
+                    <input
+                    type="text"
+                    >
+                    </input>
                 </div>
                 <div>
                     <h4>Monthly Payment</h4>
-                    <input></input>
+                    <input
+                    >
+                    </input>
                 </div>
                 <div>
                     <h4>Beds</h4>
-                    <input></input>
+                    <input
+                    type="text"
+                    >
+                    </input>
                 </div>
                 <div>
                     <h4>Baths</h4>
-                    <input></input>
+                    <input
+                    type="text"
+                   >
+                    </input>
                 </div>
             </div>
 
